@@ -17,11 +17,7 @@ node ('master'){
             app.push("latest")
         			} */
          }
-    stage('SECURITY-IMAGE-SCANNER'){
-        build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
-    }
-  
-    
+     
     stage('Pull-image-server') {
         sh 'echo Pull-image-server'
        /*  sh "docker-compose down"
