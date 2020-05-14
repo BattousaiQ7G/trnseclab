@@ -13,7 +13,7 @@ node ('Ubuntu-appagent'){
     }
     stage('Post-to-dockerhub') {
         //sh 'echo Post-to-dockerhub'
-    * docker.withRegistry('https://registry.hub.docker.com', 'caiomarciox') {
+    docker.withRegistry('https://registry.hub.docker.com', 'caiomarciox') {
             app.push("latest")
         			} 
          }
