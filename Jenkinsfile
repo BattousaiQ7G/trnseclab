@@ -15,8 +15,7 @@ node ('Ubuntu-appagent'){
         //sh 'echo Post-to-dockerhub'
         docker.withRegistry('https://registry.hub.docker.com', 'caiomarciox') {
             app.push("latest")
-        			} 
-         }
+                 }
      
     stage('Pull-image-server') {
         //sh 'echo Pull-image-server'
