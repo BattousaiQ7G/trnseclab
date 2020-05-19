@@ -4,9 +4,9 @@ node ('Ubuntu-appagent'){
         /* Let's make sure we have the repository cloned to our workspace */
        checkout scm
     }
-    /*stage('SAST') {
-        build 'Security-SAST-SNYK'
-    }*/
+    stage('SAST') {
+     
+    }
        
     stage('Build-and-Tag') {
         //sh 'echo Build-and-Tag'
