@@ -32,6 +32,6 @@ node ('Ubuntu-appagent'){
         build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCAN'
         }
 }
-    
+}    
  
 
